@@ -8,9 +8,9 @@ For more help using conda, please see: [https://conda.io/docs/]
 ## Section 1: Install conda
 
 Installing things can involve a lot of reading/writing of files and therefore can be memory intensive
-so ideally we want to do this on the cluster. Lets sign into the head node (e.g. cgath1, deva or klyn) and log into a compute node on the cluster.
+so ideally we want to do this on the cluster. Lets sign into the head node (e.g. cgath2) and log into a compute node on the cluster.
 
-**1) Log into the cluster using ssh**
+**1) Log into the cluster using ssh - Note you need to be connected to the vpn to ssh**
 
     $ ssh <username>@cgatui.imm.ox.ac.uk
     
@@ -134,7 +134,7 @@ If you don't specify a version, the latest available one will be installed. Howe
 
 **12) It is also possible to see what would happen when you install a package without actually installing it (also known as a dry run)**
 
-    $ conda install pysam --dry-run
+    $ conda install fastqc --dry-run
 
 **13) In addition to the `conda search <name>` command, you can also visit the following websites to check for available conda packages:**
 
@@ -411,3 +411,6 @@ The file that you need to place these lines in will depend on what terminal you 
 
 - Windows  
     - you are using the windows subsystem for linux you need to edit the `~/.bashrc`
+    
+- Linux  
+    - you are using the a linux distribution (e.g. Ubuntu) you need to edit the `~/.bashrc`
